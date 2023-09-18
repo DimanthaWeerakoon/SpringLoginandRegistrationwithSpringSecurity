@@ -32,7 +32,7 @@ public class User {
 
     private Collection<Role> roles;
 
-    public User(Long id, String firstName, String lastName, String email, String password, Collection<Role> roles) {
+    public User(String firstName, String lastName, String email, String password, Collection<Role> roles) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -44,7 +44,4 @@ public class User {
     public User() {
     }
 
-    public <T> User(String firstName, String lastName, String email, String password, List<T> role_user) {
-
-    }
 }

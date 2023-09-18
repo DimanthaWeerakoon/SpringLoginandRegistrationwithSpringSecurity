@@ -21,8 +21,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User save(UserModel userModel) {
-        User user = new User(userModel.getFirstName(), userModel.getLastName(), userModel.getEmail(), userModel.getPassword(), Arrays.asList(new Role("ROLE_USER")));
-
+        User user = new User(userModel.getFirstName(), userModel.getLastName(), userModel.getEmail(), userModel.getPassword(),
+                Arrays.asList(new Role("ROLE_USER")));
         return userRepository.save(user);
     }
 }
